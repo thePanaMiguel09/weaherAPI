@@ -13,7 +13,7 @@ function WeatherCard({ city, conditon, region, temperature,humility,wind }: Prop
   return (
     <div
       style={{
-        width: "30%",
+        width: "auto",
         height: "500px",
         border: "solid",
         borderWidth: "1px",
@@ -29,7 +29,7 @@ function WeatherCard({ city, conditon, region, temperature,humility,wind }: Prop
           className=" h-[64px] w-[64px] mb-48"
         />
         <h1 className="text-6xl text-white font-bold">{temperature + " °C"}</h1>
-        <h2 className="text-3xl text-white font-semibold">
+        <h2 className="text-3xl text-white font-semibold p-10">
           {city + "-" + region}
         </h2>
       </div>
