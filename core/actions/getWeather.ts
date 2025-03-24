@@ -2,7 +2,7 @@ import { apiWeather } from "../api/apiWeather";
 import { Weather } from "../../infraestructure/intercaces/WeatherResponse";
 
 
-const apiKey = import.meta.env.VITE_API_KEY;
+const apiKey = (import.meta as any).env.VITE_API_KEY;
 
 export const getWeather = async () => {
   try {
